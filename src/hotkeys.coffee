@@ -29,7 +29,7 @@ class Hotkeys extends SimpleModule
 
     # Punctuation keys that don't require holding down Shift
     # Hyphen is nonportable: FF returns same code as Subtract
-    59:";", 61:"=", 186:";", 187:"=", # Firefox and Opera return 59,61 
+    59:";", 61:"=", 186:";", 187:"=", # Firefox and Opera return 59,61
     188:",", 190:".", 191:"/", 192:"`", 219:"[", 220:"\\", 221:"]", 222:"'"
 
   @aliases:
@@ -90,5 +90,5 @@ class Hotkeys extends SimpleModule
     @_map = {}
     @
 
-hotkeys = (opts) ->
+simpleHotkeys = (opts) ->
   new Hotkeys(opts)
