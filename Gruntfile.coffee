@@ -20,7 +20,7 @@ module.exports = (grunt) ->
         src: 'lib/<%= name %>.js'
         template: 'umd.hbs'
         amdModuleId: '<%= pkg.name %>'
-        objectToExport: 'simpleHotkeys'
+        objectToExport: '<%= name %>'
         globalAlias: 'simpleHotkeys'
         deps:
           'default': ['$', 'SimpleModule']
